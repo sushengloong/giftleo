@@ -1,0 +1,14 @@
+development:
+  facebook_app_id: "376531562434266"
+  facebook_secret: "94103965a58c4a104d4e7178a3545b81"
+  facebook_scope: "email,user_birthday,user_likes,friends_birthday,friends_likes"
+
+test:
+  facebook_app_id: "376531562434266"
+  facebook_secret: "94103965a58c4a104d4e7178a3545b81"
+  facebook_scope: "email,user_birthday,user_likes,friends_birthday,friends_likes"
+
+production:
+  facebook_app_id: "376531562434266"
+  facebook_secret: "94103965a58c4a104d4e7178a3545b81"
+  facebook_scope: "email,user_birthday,user_likes,friends_birthday,friends_likes"
