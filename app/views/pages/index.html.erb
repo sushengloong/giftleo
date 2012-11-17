@@ -18,23 +18,35 @@
     <tr>
       <td colspan="2">This Month</td>
     </tr>
-    <tr>
-      <td></td>
-      <td></td>
-    </tr>
+    <% current_user.friends_birthday[sanitize_month].each do |days| %>
+      <% days.flatten.each do |d| %>
+        <tr>
+          <td><%= d["name"] %></td>
+          <td><%= d["birthday"] %></td>
+        </tr>
+      <% end unless days.nil? %>
+    <% end %>
     <tr>
       <td colspan="2"><%= display_month_with_increment(1) %></td>
     </tr>
-    <tr>
-      <td></td>
-      <td></td>
-    </tr>
+    <% current_user.friends_birthday[sanitize_month(1)].each do |days| %>
+      <% days.flatten.each do |d| %>
+        <tr>
+          <td><%= d["name"] %></td>
+          <td><%= d["birthday"] %></td>
+        </tr>
+      <% end unless days.nil? %>
+    <% end %>
     <tr>
     <td colspan="2"><%= display_month_with_increment(2) %></td>
     </tr>
-    <tr>
-      <td></td>
-      <td></td>
-    </tr>
+    <% current_user.friends_birthday[sanitize_month(2)].each do |days| %>
+      <% days.flatten.each do |d| %>
+        <tr>
+          <td><%= d["name"] %></td>
+          <td><%= d["birthday"] %></td>
+        </tr>
+      <% end unless days.nil? %>
+    <% end %>
   </table>
 </div>
